@@ -7,8 +7,7 @@ A task management web application to record daily tasks, including User Registra
 
 ## Demo
 
-![Screenshot](./pictures/demo.png)
-
+![](./pictures/todo_screenshot.png)
 ## Environment settings
 
 - Python: 3.8
