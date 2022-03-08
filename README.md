@@ -6,8 +6,18 @@
 A task management web application to record daily tasks, including User Registration, Login, Search and full Create Read Update and DELETE functionality. Login required. Each user can only access their own tasks.
 
 ## Demo
+This demo is depolyed on [Heroku](https://www.heroku.com/).
 
 ![](./pictures/todo_screenshot.png)
+
+You can also visit the **[DEMO](https://to-do-list-board.herokuapp.com/login/)** here.
+
+Default account shows below.
+
+Username: paul \
+Password: paul123#
+
+
 ## Environment settings
 
 - Python: 3.8
@@ -16,7 +26,7 @@ A task management web application to record daily tasks, including User Registra
 - PostgreSQL: 12.9
 
 
-Download requirment packages with anaconda (recommend).
+Download requirment packages with anaconda.
 ```
 conda env create -f todo.yaml
 ```
@@ -27,6 +37,17 @@ pip install -r requirements.txt
 ```
 
 
-After installing all required packages, you can run it by `python manage.py runserver`. It will be deployed at `localhost:8000` as default.
+After installing all required packages, we need to run the command below to initial our database in the target folder.
+
+```
+python manage.py migrate
+```
+
+Then you can run it by
+```
+python manage.py runserver
+```
+
+It will be deployed at `localhost:8000` as default.
 
 
